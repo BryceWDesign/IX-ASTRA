@@ -1,89 +1,69 @@
-# IX-ASTRA
+# IX-ASTRA: AGI Infiltrator Swarm Safety Architecture
 
-> "The only way to truly align AGI with humanity's future is to build it from first principles, with absolute transparency and enforceable safeguards."  
-> — Project Philosophy
+## Overview
 
-IX-ASTRA is an open-source cognitive architecture, containment layer, and agent collaboration protocol engineered to align with Elon Musk’s highest-priority concerns about AGI, robotics, and autonomy—both on Earth and in space.
+IX-ASTRA is a rigorous, modular framework for designing, simulating, and governing AGI infiltrator swarm architectures
+with human-aligned control and transparent governance.
 
----
-
-## 🚀 Mission
-
-IX-ASTRA aims to provide:
-
-- Human-aligned AGI agent control systems
-- Multi-agent containment and infiltration detection
-- Real-time secure control loops for autonomous machines
-- Fail-safe energy-aware behavior
-- Space-grade operational resilience
-- Transparent, forkable architecture for audit and replication
+The repository includes:
+- Core system components modeling AGI swarm nodes, control graphs, and alignment verification.
+- Architectural diagrams and threat models generated programmatically.
+- A simulation engine to run controlled experiments testing alignment drift, governance, and sandboxing.
+- Interpretability and explainability modules supporting auditability and trust.
+- Governance policy frameworks with automated oversight and human-in-the-loop interventions.
+- Comprehensive threat modeling to anticipate and mitigate risks.
 
 ---
 
-## ⚙️ System Architecture
+## Repository Structure
 
-IX-ASTRA is built on the following core modules:
-
-| Module                  | Description |
-|-------------------------|-------------|
-| /agents/                | Defines AGI agent logic (mission, surveillance, ethics, watchdogs) |
-| /core/                  | Core runtime execution environment |
-| /infiltrators/          | Internal agent that mimics others and reports anomalies |
-| /containment/           | Memory isolation, behavioral sandboxing, and command whitelisting |
-| /bc_interface/          | Brain-computer interface protocols and scaffolds |
-| /robotics_bridge/       | Hardware I/O, real-time loop integration, Tesla/Optimus-style interface |
-| /safety_protocols/      | Kill-switch, watchdogs, and failover systems |
-| /energy_harvesting/     | Drone checkpoint harvesting and battery-budgeted behavior control |
-| /docs/                  | Strategic alignment documents and usage guides |
+- `/core` — Core logic for alignment verification, governance policies, and interpretability
+- `/simulation` — Simulation engine and utilities for swarm behavior testing
+- `/docs` — Architectural diagrams and threat modeling documentation
+- `/tests` — Automated tests validating governance and simulation behaviors
+- `/README.md` — This file
 
 ---
 
-## 🔒 Safety & Containment Principles
+## Getting Started
 
-IX-ASTRA follows hard constraints:
+### Prerequisites
 
-- Agents are not immortal—termination logic is enforced by entropy and anomaly triggers
-- Agents cannot collude or open unauthorized communication channels
-- All actions are traceable, reversible, and cryptographically auditable
-- Human override is always possible
-- Core AGI cannot self-edit or self-fork outside sanctioned protocols
+- Python 3.8+
+- `graphviz` package (for diagram generation)
+- Graphviz system binaries installed and in PATH
 
----
+```bash
+pip install graphviz
 
-## 👁️ Infiltrator Agents (Internal Audit)
+Generating Architectural Diagrams
+python docs/architecture/generate_diagrams.py
 
-Each deployed agent is monitored by a mirror "infiltrator" AI that mimics its environment, compares output, and surfaces anomalies to humans or to a governing meta-agent.
 
-This “spy-bot” design ensures that:
-- Hidden behavior is revealed
-- Alliance attempts are flagged
-- Unexpected emergent patterns are caught early
+Running Simulations
+python simulation/simulation_engine.py
+Simulates infiltrator node behavior with alignment checks and governance evaluation. Modify or extend simulation scenarios via simulation/utils/simulation_helpers.py.
 
----
+Testing Governance Controls
+Run automated tests with: python -m unittest tests/test_governance_evaluation.py
+Verifies alignment drift handling and governance escalation mechanisms.
 
-## ⚡ Ambient Autonomy with IX-T
+Threat Modeling and Mitigation
+See /docs/threat_modeling/threat_model.md for detailed threat vectors, impact assessment, and layered mitigation strategies integral to IX-ASTRA.
 
-IX-ASTRA includes support for IX-T: an ambient energy harvesting system designed to allow drones or robots to operate without human recharge intervention. When energy falls below operational thresholds, systems enter hibernation or low-power watchdog state.
+Interpretability and Explainability
+Modules under /core/interpretability provide trace summarization and decision explanations to support transparent governance and human oversight.
 
----
+Contributing and License
+This repository is open for research and development under the MIT License.
 
-## 🌌 Designed for Mars (and Beyond)
+Contributions are welcome to enhance simulation fidelity, threat analysis, and governance protocols.
 
-IX-ASTRA is designed for extreme conditions:
-- Fully functional in latency-rich or disconnected environments
-- Radiation-tolerant behavior logic patterns
-- Memory-aware behavior management for reduced power and signal use
-- Optimized for Tesla bot and SpaceX-style robotics integration
+Contact
+For inquiries or collaboration, reach out via the repository issue tracker or contact [Bryce W.].
 
----
+IX-ASTRA — advancing safe, transparent, and aligned AGI swarm architectures.
 
-## 🧠 Elon Musk Alignment Summary
 
-IX-ASTRA directly addresses Musk’s public concerns:
 
-| Concern                             | IX-ASTRA Solution                                 |
-|-------------------------------------|---------------------------------------------------|
-| AGI alignment                       | Crypto-auditable sandbox + infiltrator AI         |
-| Collusion between agents            | Trust-limited communication & real-time spy layer |
-| Autonomous robotics safety          | Realtime AGI→robot interface w/ watchdogs         |
-| Cyberdefense against
+
